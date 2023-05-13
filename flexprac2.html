@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .main-container{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+       }
+        .comStyle{
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header.header{
+            background-color: lightskyblue;
+        }
+        footer.footer{
+            background-color: orange;
+        }
+        .main{
+         height: 600px;
+        }
+       .row1{
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+       }
+       .r1column1{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+       }
+       .r1column2{
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+       }
+       .row2{
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+       }
+       .r2column1{
+        display: flex;
+        flex: 2;
+       }
+       .r2column2{
+        display: flex;
+        flex: 1;
+       }
+       .r1c1row1{
+        height: 40%;
+        background-color: antiquewhite;
+       }
+       .r1c1row2{
+        height: 60%;
+        background-color: aquamarine;
+       }
+       .r1c2row1{
+        height: 70%;
+        background-color: lightcoral;
+       }
+       .r1c2row2{
+        height: 30%;
+        background-color: lightcyan ;
+       }
+       .r2column1{
+        background-color: lightgreen;
+       }
+       .r2column2{
+        background-color: lightpink;
+       }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header comStyle"><h1>Header</h1></header>
+        <div class="main">
+            <div class="row1">
+                <div class="r1column1">
+                    <div class="r1c1row1 comStyle"><h1>Article-1</h1></div>
+                    <div class="r1c1row2 comStyle"><h1>Article-2</h1></div>
+                </div>
+                <div class="r1column2">
+                    <div class="r1c2row1 comStyle"><h1>Main-content</h1></div>
+                    <div class="r1c2row2 comStyle"><h1>Extra-content</h1></div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="r2column1 comStyle"><h1>Image-1</h1></div>
+                <div class="r2column2 comStyle"><h1>Image-2</h1></div>
+            </div>
+        </div>
+        <footer class="footer comStyle"><h1>Footer</h1></footer>
+    </div>
+</body>
+</html>
